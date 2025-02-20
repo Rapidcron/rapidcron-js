@@ -1,6 +1,6 @@
 {
     "name": "rapidcron",
-    "version": "1.0.0-beta.5",
+    "version": "1.0.0-beta.6xs",
     "description": "Node.js SDK for Rapidcron",
     "main": "./build/main/index.js",
     "module": "./build/main/index.js",
@@ -9,7 +9,8 @@
     "license": "MIT",
     "keywords": [],
     "scripts": {
-        "build": "tsc -p tsconfig.json"
+        "build": "tsc -p tsconfig.json",
+        "prepare": "yarn run build"
     },
     "engines": {
         "node": ">=10"

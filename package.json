@@ -1,11 +1,14 @@
 {
     "name": "rapidcron",
-    "version": "1.0.0-beta.6xs",
+    "version": "1.0.0-beta.6",
     "description": "Node.js SDK for Rapidcron",
     "main": "./build/main/index.js",
     "module": "./build/main/index.js",
     "types": "./build/main/index.d.ts",
-    "repository": "https://github.com/Rapidcron/rapidcron-js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Rapidcron/rapidcron-js.git"
+    },
     "license": "MIT",
     "keywords": [],
     "scripts": {

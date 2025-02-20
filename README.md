@@ -17,8 +17,7 @@ yarn add rapidcron
 Initialise the Rapidcron class with your [API Key](https://rapidcron.com/app/keys)
 
 ```ts
-import Rapidcron
-    from "rapidcron";
+import Rapidcron from "rapidcron";
 
 const rapidcron = new Rapidcron("API_KEY");
 

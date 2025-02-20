@@ -1,19 +1,26 @@
 # Rapidcron
 
+Rapidcron is the easiest way to schedule background jobs and crons for your applications. Schedule background tasks in
+seconds without managing any infrastructure, save money on servers, and focus on building your app.
+
 [![npm version](https://badge.fury.io/js/rapidcron.svg)](https://badge.fury.io/js/rapidcron)
 
 # Installation
+
 Install the package using npm:
+
 ```bash
 npm install rapidcron --save
 ```
 
 or using yarn:
+
 ```bash
 yarn add rapidcron
 ```
 
 # Usage
+
 Initialise the Rapidcron class with your [API Key](https://rapidcron.com/app/keys)
 
 ```ts
@@ -51,4 +58,5 @@ await rapidcron.tasks.create({
 Read the [API Documentation](https://docs.rapidcron.com) for more information.
 
 # License
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

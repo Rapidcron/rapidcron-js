@@ -1,6 +1,6 @@
-import RapidcronClient from "./rapidcron-client";
 import Runs from "./lib/runs";
 import Tasks from "./lib/tasks";
+import RapidcronClient from "./rapidcron-client";
 
 export default class Rapidcron {
     private readonly client: RapidcronClient;

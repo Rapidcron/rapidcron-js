@@ -30,7 +30,7 @@ export default class Tasks {
             (original: RawTask) => {
                 return {
                     ...original,
-                    nextRunAt: new Date(original.nextRunAt),
+                    nextRunAt: original.nextRunAt ? new Date(original.nextRunAt) : undefined,
                     createdAt: new Date(original.createdAt),
                 };
             }
@@ -43,7 +43,7 @@ export default class Tasks {
 
             return tasks.map((task) => ({
                 ...task,
-                nextRunAt: new Date(task.nextRunAt),
+                nextRunAt: task.nextRunAt ? new Date(task.nextRunAt) : undefined,
                 createdAt: new Date(task.createdAt),
             }));
         });
@@ -53,7 +53,7 @@ export default class Tasks {
         return this.client.get(`/tasks/${id}`, (original: RawTask) => {
             return {
                 ...original,
-                nextRunAt: new Date(original.nextRunAt),
+                nextRunAt: original.nextRunAt ? new Date(original.nextRunAt) : undefined,
                 createdAt: new Date(original.createdAt),
             };
         });
